@@ -35,25 +35,26 @@ struct FastaiTextClassification: ParsableCommand {
             wrangler.describe()
             wrangler.save_csv(path: dataWithHeaderPath)
         } else {
-            print("Omitting the description of the dataset...")
+            Python.print("Omitting the description of the dataset...")
         }
 
         let wrapper = ModelWrapper(csv_path: dataWithHeaderPath)
 
         for n_epochs_language_model in 4...7{
             wrapper.init_language_model()
-            let learning_rate = 0.1//wrapper.find_learning_rate_with_steepest_loss()!
+            let learning_rate = wrapper.find_learning_rate_with_steepest_loss()!
+            Python.print("Selected learning rate \(learning_rate) for training language model")
             wrapper.fit(n_cycles: n_epochs_language_model, learning_rate: learning_rate)
             wrapper.save(path: encoderKey, just_encoder: true)
-
             for n_epochs_classifier in 4...6{
                 for n_unfrozen_layers in 0...3{
                     wrapper.init_classifier()
                     let learning_rate = wrapper.find_learning_rate_with_steepest_loss()!
+                    Python.print("Selected learning rate \(learning_rate) for training classifier")
                     wrapper.load(path: encoderKey, just_encoder: true)
                     wrapper.freeze(n_layers: -n_unfrozen_layers)
                     wrapper.fit(n_cycles: n_epochs_classifier, learning_rate: learning_rate)
-                    print("Interpretation of the results given by model having encoder trained during \(n_epochs_language_model) epochs, " +
+                    Python.print("Interpretation of the results given by model having encoder trained during \(n_epochs_language_model) epochs, " +
                     "classifier during \(n_epochs_classifier) epochs and with \(n_unfrozen_layers) unfrozen layers:")
                     wrapper.interpret()
                 }

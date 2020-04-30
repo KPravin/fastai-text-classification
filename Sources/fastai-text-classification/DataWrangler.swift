@@ -23,19 +23,19 @@ class DataWrangler {
     }
 
     func describe(top_n: Int = 10) {
-        print(#"Data is read from file "\#(csv_path)""#)
-        print("Number of records: \(df.shape[0])")
-        print("The first \(top_n) records from the collection:")
-        print(df.head(top_n))
-        print("The first \(top_n) records after removing redundant columns:")
+        Python.print(#"Data is read from file "\#(csv_path)""#)
+        Python.print("Number of records: \(df.shape[0])")
+        Python.print("The first \(top_n) records from the collection:")
+        Python.print(df.head(top_n))
+        Python.print("The first \(top_n) records after removing redundant columns:")
         let concise_df = drop_redundant_columns(columns_to_retain: "mark", "text")
-        print(concise_df.head(top_n))
-        print("Some additional info about datates:")
-        print(concise_df.info())
-        print("Some statistics about marks:")
-        print(concise_df.mark.describe())
-        print("Distribution of tweet lengths:")
-        print(concise_df.text.apply(Python.len).describe())
+        Python.print(concise_df.head(top_n))
+        Python.print("Some additional info about datates:")
+        Python.print(concise_df.info())
+        Python.print("Some statistics about marks:")
+        Python.print(concise_df.mark.describe())
+        Python.print("Distribution of tweet lengths:")
+        Python.print(concise_df.text.apply(Python.len).describe())
     }
 
     func save_csv(path: String) {

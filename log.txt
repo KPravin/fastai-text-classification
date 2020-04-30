@@ -1,0 +1,1762 @@
+'fastai-text-classification' /home/zeio/fastai-text-classification: warning: ignoring duplicate product 'fastai-text-classification'
+[1/4] Compiling fastai-text-classification DataWrangler.swift
+[2/4] Compiling fastai-text-classification main.swift
+[3/4] Compiling fastai-text-classification ModelWrapper.swift
+[4/5] Merging module fastai-text-classification
+[5/5] Linking fastai-text-classification
+Omitting the description of the dataset...
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         4.502695    #na#        00:00     
+█1         4.511107    #na#        00:00     
+█2         4.515493    #na#        00:00     
+█3         4.508225    #na#        00:00     
+█4         4.503147    #na#        00:00     
+█5         4.501502    #na#        00:00     
+█6         4.507178    #na#        00:00     
+█7         4.511981    #na#        00:00     
+█8         4.513892    #na#        00:00     
+█9         4.514447    #na#        00:00     
+█10        4.513804    #na#        00:00     
+█11        4.514897    #na#        00:00     
+█12        4.515400    #na#        00:00     
+█13        4.510637    #na#        00:00     
+█14        4.505597    #na#        00:00     
+█15        4.507922    #na#        00:00     
+█16        4.497940    #na#        00:00     
+█17        4.482595    #na#        00:00     
+█18        4.455743    #na#        00:00     
+█19        4.414254    #na#        00:00     
+█20        4.360962    #na#        00:00     
+█21        4.285936    #na#        00:00     
+█22        4.198183    #na#        00:00     
+█23        4.099013    #na#        00:00     
+█24        3.991468    #na#        00:00     
+█25        3.882308    #na#        00:00     
+█26        3.766646    #na#        00:00     
+█27        3.651704    #na#        00:00     
+█28        3.541467    #na#        00:00     
+█29        3.473616    #na#        00:00     
+█30        3.561753    #na#        00:00     
+█31        4.082256    #na#        00:00     
+█32        5.724164    #na#        00:00     
+█33        6.617788    #na#        00:00     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 100 learning rates
+Selected learning rate 0.36307805477010097 for training language model
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         4.347291    6.143998    0.147321  00:00     
+██1         4.631615    4.797844    0.256696  00:00     
+██2         4.478694    4.023266    0.320312  00:00     
+██3         4.171773    3.737931    0.324554  00:00     
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.165191    #na#        00:01     
+█1         1.188201    #na#        00:01     
+█2         1.184713    #na#        00:01     
+█3         1.190958    #na#        00:01     
+█4         1.197930    #na#        00:01     
+█5         1.183362    #na#        00:01     
+█6         1.171739    #na#        00:01     
+█7         1.162997    #na#        00:01     
+█8         1.142529    #na#        00:01     
+█9         1.147640    #na#        00:01     
+█10        1.207117    #na#        00:01     
+█11        5.557633    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.236795    1.103185    0.333333  00:01     
+██1         1.205995    1.102038    0.343434  00:01     
+██2         1.214306    1.103007    0.343434  00:01     
+██3         1.210442    1.108551    0.282828  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 4 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(2, 0, 21), (4, 0, 17), (4, 2, 13), (0, 2, 11), (2, 4, 6), (0, 4, 3)]
+Confusion matrix:
+[[19 11  3]
+ [21  8  6]
+ [17 13  1]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.3615, 0.3573, 0.2812]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.3675, 0.3350, 0.2975]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.223028    #na#        00:01     
+█1         1.211854    #na#        00:01     
+█2         1.205026    #na#        00:01     
+█3         1.215458    #na#        00:01     
+█4         1.207833    #na#        00:01     
+█5         1.202275    #na#        00:01     
+█6         1.183561    #na#        00:01     
+█7         1.160202    #na#        00:01     
+█8         1.147227    #na#        00:01     
+█9         1.163392    #na#        00:01     
+█10        1.226474    #na#        00:01     
+█11        6.985662    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.231978    1.096203    0.333333  00:01     
+██1         1.194664    1.097673    0.353535  00:01     
+██2         1.192934    1.099589    0.343434  00:01     
+██3         1.196672    1.102680    0.363636  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 4 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(4, 0, 18), (2, 4, 17), (2, 0, 12), (0, 4, 11), (0, 2, 3), (4, 2, 2)]
+Confusion matrix:
+[[19  3 11]
+ [12  6 17]
+ [18  2 11]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.3241, 0.3252, 0.3507]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.2948, 0.3150, 0.3901]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.196818    #na#        00:01     
+█1         1.198496    #na#        00:01     
+█2         1.213971    #na#        00:01     
+█3         1.201248    #na#        00:01     
+█4         1.199417    #na#        00:01     
+█5         1.198365    #na#        00:01     
+█6         1.174354    #na#        00:01     
+█7         1.161283    #na#        00:01     
+█8         1.137624    #na#        00:01     
+█9         1.147447    #na#        00:01     
+█10        1.212578    #na#        00:01     
+█11        5.446669    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 1.7378008287493754e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.228343    1.100314    0.353535  00:01     
+██1         1.233711    1.105051    0.363636  00:01     
+██2         1.235369    1.114479    0.363636  00:01     
+██3         1.225911    1.122506    0.323232  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 4 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(0, 2, 22), (4, 2, 21), (2, 0, 11), (4, 0, 9), (2, 4, 3), (0, 4, 1)]
+Confusion matrix:
+[[10 22  1]
+ [11 21  3]
+ [ 9 21  1]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.4157, 0.3515, 0.2328]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.3881, 0.3557, 0.2562]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.192683    #na#        00:01     
+█1         1.238917    #na#        00:01     
+█2         1.261967    #na#        00:01     
+█3         1.253653    #na#        00:01     
+█4         1.257796    #na#        00:01     
+█5         1.250961    #na#        00:01     
+█6         1.227950    #na#        00:01     
+█7         1.205027    #na#        00:01     
+█8         1.186604    #na#        00:01     
+█9         1.189400    #na#        00:01     
+█10        1.261381    #na#        00:01     
+█11        5.240362    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1.7378008287493754e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.289204    1.099959    0.353535  00:01     
+██1         1.248860    1.104690    0.363636  00:01     
+██2         1.253276    1.110978    0.373737  00:01     
+██3         1.234155    1.117499    0.404040  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 4 epochs and with 3 unfrozen layers:
+█Most confused classes:
+[(0, 2, 25), (4, 2, 19), (0, 4, 8), (2, 4, 7)]
+Confusion matrix:
+[[ 0 25  8]
+ [ 0 28  7]
+ [ 0 19 12]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.2761, 0.4218, 0.3021]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.2715, 0.4530, 0.2756]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.197820    #na#        00:01     
+█1         1.207810    #na#        00:01     
+█2         1.218379    #na#        00:01     
+█3         1.219897    #na#        00:01     
+█4         1.206060    #na#        00:01     
+█5         1.202504    #na#        00:01     
+█6         1.192143    #na#        00:01     
+█7         1.185209    #na#        00:01     
+█8         1.165826    #na#        00:01     
+█9         1.162769    #na#        00:01     
+█10        1.261883    #na#        00:01     
+█11        6.476897    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 94 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.238691    1.098822    0.333333  00:01     
+██1         1.241903    1.102833    0.313131  00:01     
+██2         1.229332    1.106657    0.323232  00:01     
+██3         1.228350    1.106165    0.333333  00:01     
+██4         1.229619    1.104215    0.313131  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 5 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(0, 2, 28), (2, 4, 16), (4, 2, 14), (2, 0, 5), (0, 4, 3), (4, 0, 2)]
+Confusion matrix:
+[[ 2 28  3]
+ [ 5 14 16]
+ [ 2 14 15]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.2776, 0.4393, 0.2831]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.1745, 0.3708, 0.4547]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.243109    #na#        00:01     
+█1         1.224905    #na#        00:01     
+█2         1.232257    #na#        00:01     
+█3         1.229329    #na#        00:01     
+█4         1.236256    #na#        00:01     
+█5         1.223764    #na#        00:01     
+█6         1.198020    #na#        00:01     
+█7         1.181206    #na#        00:01     
+█8         1.159172    #na#        00:01     
+█9         1.161190    #na#        00:01     
+█10        1.230522    #na#        00:01     
+█11        5.173827    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 2.0892961308540395e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.217258    1.099125    0.353535  00:01     
+██1         1.230642    1.101164    0.363636  00:01     
+██2         1.209267    1.102414    0.323232  00:01     
+██3         1.215583    1.105128    0.323232  00:01     
+██4         1.212220    1.108918    0.323232  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 5 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(4, 2, 21), (0, 4, 18), (0, 2, 13), (2, 4, 12), (4, 0, 2), (2, 0, 1)]
+Confusion matrix:
+[[ 2 13 18]
+ [ 1 22 12]
+ [ 2 21  8]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.3627, 0.3140, 0.3234]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.2614, 0.5083, 0.2303]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.202146    #na#        00:01     
+█1         1.232380    #na#        00:01     
+█2         1.246059    #na#        00:01     
+█3         1.247993    #na#        00:01     
+█4         1.253818    #na#        00:01     
+█5         1.237259    #na#        00:01     
+█6         1.223181    #na#        00:01     
+█7         1.207421    #na#        00:01     
+█8         1.183155    #na#        00:01     
+█9         1.178959    #na#        00:01     
+█10        1.265563    #na#        00:01     
+█11        4.359889    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 1.7378008287493754e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.399173    1.101251    0.323232  00:01     
+██1         1.373300    1.107349    0.282828  00:01     
+██2         1.382073    1.119945    0.303030  00:01     
+██3         1.387379    1.139177    0.262626  00:01     
+██4         1.389900    1.165358    0.282828  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 5 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(2, 0, 17), (0, 2, 16), (4, 0, 15), (2, 4, 10), (4, 2, 7), (0, 4, 6)]
+Confusion matrix:
+[[11 16  6]
+ [17  8 10]
+ [15  7  9]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.3342, 0.2521, 0.4137]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.3003, 0.2170, 0.4827]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.227125    #na#        00:01     
+█1         1.219589    #na#        00:01     
+█2         1.224713    #na#        00:01     
+█3         1.235029    #na#        00:01     
+█4         1.238215    #na#        00:01     
+█5         1.224430    #na#        00:01     
+█6         1.211781    #na#        00:01     
+█7         1.185960    #na#        00:01     
+█8         1.165105    #na#        00:01     
+█9         1.160837    #na#        00:01     
+█10        1.211295    #na#        00:01     
+█11        5.216842    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 94 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.230800    1.101996    0.292929  00:01     
+██1         1.229218    1.105530    0.323232  00:01     
+██2         1.225057    1.117972    0.333333  00:01     
+██3         1.232746    1.130377    0.313131  00:01     
+██4         1.217245    1.148369    0.323232  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 5 epochs and with 3 unfrozen layers:
+█Most confused classes:
+[(2, 0, 28), (4, 0, 26), (2, 4, 5), (4, 2, 5), (0, 2, 2), (0, 4, 1)]
+Confusion matrix:
+[[30  2  1]
+ [28  2  5]
+ [26  5  0]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.3858, 0.4331, 0.1811]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.3395, 0.3614, 0.2991]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.221712    #na#        00:01     
+█1         1.238085    #na#        00:01     
+█2         1.220683    #na#        00:01     
+█3         1.218584    #na#        00:01     
+█4         1.222623    #na#        00:01     
+█5         1.208394    #na#        00:01     
+█6         1.186396    #na#        00:01     
+█7         1.162160    #na#        00:01     
+█8         1.145307    #na#        00:01     
+█9         1.159863    #na#        00:01     
+█10        1.242052    #na#        00:01     
+█11        5.227242    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 5.248074602497725e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.153125    1.099784    0.333333  00:01     
+██1         1.193006    1.102507    0.373737  00:01     
+██2         1.197763    1.105514    0.333333  00:01     
+██3         1.199324    1.106039    0.353535  00:01     
+██4         1.199452    1.106362    0.353535  00:01     
+██5         1.189084    1.106455    0.353535  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 6 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(0, 4, 20), (2, 4, 20), (2, 0, 8), (4, 0, 7), (4, 2, 7), (0, 2, 2)]
+Confusion matrix:
+[[11  2 20]
+ [ 8  7 20]
+ [ 7  7 17]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.4002, 0.3709, 0.2290]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.4063, 0.4109, 0.1828]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.229543    #na#        00:01     
+█1         1.211711    #na#        00:01     
+█2         1.219647    #na#        00:01     
+█3         1.220186    #na#        00:01     
+█4         1.219212    #na#        00:01     
+█5         1.205625    #na#        00:01     
+█6         1.182863    #na#        00:01     
+█7         1.156157    #na#        00:01     
+█8         1.136685    #na#        00:01     
+█9         1.145447    #na#        00:01     
+█10        1.223062    #na#        00:01     
+█11        4.799697    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1.4454397707459274e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.251907    1.099365    0.353535  00:01     
+██1         1.239667    1.107496    0.353535  00:01     
+██2         1.252611    1.119807    0.343434  00:01     
+██3         1.247598    1.129019    0.303030  00:01     
+██4         1.251540    1.139892    0.292929  00:01     
+██5         1.254921    1.155509    0.272727  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 6 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(0, 2, 28), (4, 2, 21), (2, 4, 11), (2, 0, 6), (4, 0, 4), (0, 4, 2)]
+Confusion matrix:
+[[ 3 28  2]
+ [ 6 18 11]
+ [ 4 21  6]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.4073, 0.3150, 0.2777]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.5949, 0.2320, 0.1731]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.204767    #na#        00:01     
+█1         1.227957    #na#        00:01     
+█2         1.222437    #na#        00:01     
+█3         1.223400    #na#        00:01     
+█4         1.226105    #na#        00:01     
+█5         1.217555    #na#        00:01     
+█6         1.194966    #na#        00:01     
+█7         1.172811    #na#        00:01     
+█8         1.155582    #na#        00:01     
+█9         1.158871    #na#        00:01     
+█10        1.212720    #na#        00:01     
+█11        4.752730    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 94 learning rates
+Selected learning rate 1e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.230735    1.102821    0.333333  00:01     
+██1         1.201337    1.114552    0.333333  00:01     
+██2         1.197001    1.125729    0.323232  00:01     
+██3         1.195184    1.124164    0.353535  00:01     
+██4         1.202230    1.111661    0.353535  00:01     
+██5         1.195443    1.110023    0.333333  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 6 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(4, 0, 21), (2, 0, 20), (2, 4, 8), (4, 2, 7), (0, 2, 6), (0, 4, 4)]
+Confusion matrix:
+[[23  6  4]
+ [20  7  8]
+ [21  7  3]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.5336, 0.2630, 0.2034]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.4855, 0.2244, 0.2901]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.226831    #na#        00:01     
+█1         1.251168    #na#        00:01     
+█2         1.250401    #na#        00:01     
+█3         1.237134    #na#        00:01     
+█4         1.217187    #na#        00:01     
+█5         1.204458    #na#        00:01     
+█6         1.181223    #na#        00:01     
+█7         1.168131    #na#        00:01     
+█8         1.151156    #na#        00:01     
+█9         1.152428    #na#        00:01     
+█10        1.217204    #na#        00:01     
+█11        7.178283    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 1e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.237080    1.110091    0.313131  00:01     
+██1         1.224590    1.118243    0.313131  00:01     
+██2         1.236139    1.126112    0.323232  00:01     
+██3         1.236511    1.133084    0.313131  00:01     
+██4         1.231638    1.133482    0.353535  00:01     
+██5         1.235454    1.134336    0.353535  00:01     
+Interpretation of the results given by model having encoder trained during 4 epochs, classifier during 6 epochs and with 3 unfrozen layers:
+█Most confused classes:
+[(0, 4, 25), (2, 4, 21), (2, 0, 7), (0, 2, 5), (4, 0, 4), (4, 2, 2)]
+Confusion matrix:
+[[ 3  5 25]
+ [ 7  7 21]
+ [ 4  2 25]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.3254, 0.2206, 0.4540]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.4395, 0.2554, 0.3051]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         4.512152    #na#        00:00     
+█1         4.518033    #na#        00:00     
+█2         4.524119    #na#        00:00     
+█3         4.515772    #na#        00:00     
+█4         4.508965    #na#        00:00     
+█5         4.502408    #na#        00:00     
+█6         4.505103    #na#        00:00     
+█7         4.509205    #na#        00:00     
+█8         4.510522    #na#        00:00     
+█9         4.510532    #na#        00:00     
+█10        4.510661    #na#        00:00     
+█11        4.519208    #na#        00:00     
+█12        4.519639    #na#        00:00     
+█13        4.513743    #na#        00:00     
+█14        4.511100    #na#        00:00     
+█15        4.503556    #na#        00:00     
+█16        4.493880    #na#        00:00     
+█17        4.478192    #na#        00:00     
+█18        4.451132    #na#        00:00     
+█19        4.412338    #na#        00:00     
+█20        4.357008    #na#        00:00     
+█21        4.282712    #na#        00:00     
+█22        4.195765    #na#        00:00     
+█23        4.096710    #na#        00:00     
+█24        3.989541    #na#        00:00     
+█25        3.877428    #na#        00:00     
+█26        3.763654    #na#        00:00     
+█27        3.647449    #na#        00:00     
+█28        3.547477    #na#        00:00     
+█29        3.493020    #na#        00:00     
+█30        3.614445    #na#        00:00     
+█31        4.406263    #na#        00:00     
+█32        6.161151    #na#        00:00     
+█33        6.916849    #na#        00:00     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 100 learning rates
+Selected learning rate 0.36307805477010097 for training language model
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         4.214622    4.742460    0.204688  00:00     
+██1         4.182008    4.624360    0.216964  00:00     
+██2         4.046873    4.020425    0.276786  00:00     
+██3         3.736370    3.594758    0.317187  00:00     
+██4         3.448071    3.530092    0.324777  00:00     
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.237365    #na#        00:01     
+█1         1.220286    #na#        00:01     
+█2         1.217320    #na#        00:01     
+█3         1.217432    #na#        00:01     
+█4         1.201872    #na#        00:01     
+█5         1.200505    #na#        00:01     
+█6         1.187517    #na#        00:01     
+█7         1.173238    #na#        00:01     
+█8         1.158247    #na#        00:01     
+█9         1.159816    #na#        00:01     
+█10        1.219593    #na#        00:01     
+█11        5.655685    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.238944    1.104491    0.363636  00:01     
+██1         1.246768    1.121697    0.292929  00:01     
+██2         1.265202    1.139551    0.292929  00:01     
+██3         1.275142    1.151537    0.313131  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 4 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(2, 4, 32), (0, 4, 30), (2, 0, 3), (4, 0, 3)]
+Confusion matrix:
+[[ 3  0 30]
+ [ 3  0 32]
+ [ 3  0 28]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.3342, 0.3488, 0.3170]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.4276, 0.2284, 0.3441]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.222339    #na#        00:01     
+█1         1.212497    #na#        00:01     
+█2         1.205083    #na#        00:01     
+█3         1.202118    #na#        00:01     
+█4         1.195439    #na#        00:01     
+█5         1.177341    #na#        00:01     
+█6         1.168231    #na#        00:01     
+█7         1.149554    #na#        00:01     
+█8         1.133826    #na#        00:01     
+█9         1.139892    #na#        00:01     
+█10        1.201963    #na#        00:01     
+█11        4.607167    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 94 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.123754    1.103096    0.313131  00:01     
+██1         1.150639    1.110894    0.323232  00:01     
+██2         1.137413    1.120108    0.323232  00:01     
+██3         1.138138    1.122519    0.313131  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 4 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(0, 4, 31), (2, 4, 31), (4, 2, 4), (0, 2, 2)]
+Confusion matrix:
+[[ 0  2 31]
+ [ 0  4 31]
+ [ 0  4 27]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.2796, 0.3940, 0.3263]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.2592, 0.3310, 0.4098]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.210966    #na#        00:01     
+█1         1.221789    #na#        00:01     
+█2         1.220261    #na#        00:01     
+█3         1.227662    #na#        00:01     
+█4         1.231038    #na#        00:01     
+█5         1.228552    #na#        00:01     
+█6         1.217980    #na#        00:01     
+█7         1.190984    #na#        00:01     
+█8         1.162197    #na#        00:01     
+█9         1.170536    #na#        00:01     
+█10        1.216565    #na#        00:01     
+█11        6.381035    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 2.0892961308540395e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.273081    1.095737    0.353535  00:01     
+██1         1.271605    1.095385    0.353535  00:01     
+██2         1.271883    1.096935    0.414141  00:01     
+██3         1.278896    1.093899    0.414141  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 4 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(0, 2, 19), (4, 0, 16), (4, 2, 13), (2, 0, 9), (2, 4, 1)]
+Confusion matrix:
+[[14 19  0]
+ [ 9 25  1]
+ [16 13  2]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.3024, 0.3719, 0.3257]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.3583, 0.3105, 0.3312]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.234074    #na#        00:01     
+█1         1.227968    #na#        00:01     
+█2         1.219731    #na#        00:01     
+█3         1.215776    #na#        00:01     
+█4         1.199947    #na#        00:01     
+█5         1.194977    #na#        00:01     
+█6         1.172124    #na#        00:01     
+█7         1.156316    #na#        00:01     
+█8         1.141733    #na#        00:01     
+█9         1.152375    #na#        00:01     
+█10        1.188464    #na#        00:01     
+█11        5.267361    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 6.309573444801933e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.193120    1.109803    0.313131  00:01     
+██1         1.205626    1.119056    0.313131  00:01     
+██2         1.203285    1.123625    0.313131  00:01     
+██3         1.200858    1.120544    0.343434  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 4 epochs and with 3 unfrozen layers:
+█Most confused classes:
+[(0, 4, 32), (2, 4, 30), (4, 2, 2), (0, 2, 1)]
+Confusion matrix:
+[[ 0  1 32]
+ [ 0  5 30]
+ [ 0  2 29]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.2642, 0.3745, 0.3613]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.2442, 0.3083, 0.4476]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.233164    #na#        00:01     
+█1         1.221100    #na#        00:01     
+█2         1.224536    #na#        00:01     
+█3         1.231173    #na#        00:01     
+█4         1.221801    #na#        00:01     
+█5         1.217438    #na#        00:01     
+█6         1.197105    #na#        00:01     
+█7         1.179062    #na#        00:01     
+█8         1.160559    #na#        00:01     
+█9         1.150664    #na#        00:01     
+█10        1.235316    #na#        00:01     
+█11        6.446673    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 2.51188643150958e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.267803    1.105413    0.313131  00:01     
+██1         1.249094    1.111958    0.363636  00:01     
+██2         1.261369    1.119020    0.373737  00:01     
+██3         1.253727    1.126420    0.373737  00:01     
+██4         1.251405    1.137290    0.363636  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 5 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(2, 0, 20), (0, 4, 16), (2, 4, 13), (4, 0, 12), (0, 2, 1), (4, 2, 1)]
+Confusion matrix:
+[[16  1 16]
+ [20  2 13]
+ [12  1 18]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.3468, 0.2536, 0.3996]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.3453, 0.2154, 0.4394]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.247548    #na#        00:01     
+█1         1.247152    #na#        00:01     
+█2         1.244660    #na#        00:01     
+█3         1.255233    #na#        00:01     
+█4         1.242822    #na#        00:01     
+█5         1.236443    #na#        00:01     
+█6         1.208726    #na#        00:01     
+█7         1.183017    #na#        00:01     
+█8         1.158383    #na#        00:01     
+█9         1.156458    #na#        00:01     
+█10        1.225232    #na#        00:01     
+█11        6.300654    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.148130    1.109826    0.333333  00:01     
+██1         1.152645    1.115450    0.333333  00:01     
+██2         1.146880    1.117709    0.323232  00:01     
+██3         1.162021    1.117151    0.373737  00:01     
+██4         1.165601    1.113371    0.393939  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 5 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(2, 0, 26), (4, 0, 25), (2, 4, 6), (0, 4, 3)]
+Confusion matrix:
+[[30  0  3]
+ [26  3  6]
+ [25  0  6]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.4761, 0.1790, 0.3448]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.4876, 0.2598, 0.2526]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.248487    #na#        00:01     
+█1         1.244347    #na#        00:01     
+█2         1.226165    #na#        00:01     
+█3         1.222266    #na#        00:01     
+█4         1.225075    #na#        00:01     
+█5         1.216830    #na#        00:01     
+█6         1.193122    #na#        00:01     
+█7         1.172604    #na#        00:01     
+█8         1.154024    #na#        00:01     
+█9         1.158175    #na#        00:01     
+█10        1.223507    #na#        00:01     
+█11        5.301956    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 3.019951720402016e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.295002    1.106145    0.343434  00:01     
+██1         1.275227    1.114136    0.313131  00:01     
+██2         1.279736    1.124381    0.343434  00:01     
+██3         1.271481    1.133139    0.313131  00:01     
+██4         1.269628    1.147090    0.343434  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 5 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(2, 4, 19), (0, 2, 18), (0, 4, 13), (4, 2, 13), (2, 0, 2)]
+Confusion matrix:
+[[ 2 18 13]
+ [ 2 14 19]
+ [ 0 13 18]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.2355, 0.2487, 0.5158]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.3780, 0.2823, 0.3397]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.261043    #na#        00:01     
+█1         1.235994    #na#        00:01     
+█2         1.245299    #na#        00:01     
+█3         1.244120    #na#        00:01     
+█4         1.241469    #na#        00:01     
+█5         1.230624    #na#        00:01     
+█6         1.211220    #na#        00:01     
+█7         1.194042    #na#        00:01     
+█8         1.165574    #na#        00:01     
+█9         1.170034    #na#        00:01     
+█10        1.244204    #na#        00:01     
+█11        6.187933    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1.7378008287493754e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.211474    1.099188    0.353535  00:01     
+██1         1.218926    1.105882    0.353535  00:01     
+██2         1.242481    1.112255    0.383838  00:01     
+██3         1.231155    1.115405    0.343434  00:01     
+██4         1.231460    1.124489    0.363636  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 5 epochs and with 3 unfrozen layers:
+█Most confused classes:
+[(0, 2, 24), (4, 2, 23), (2, 4, 8), (0, 4, 4), (2, 0, 2), (4, 0, 2)]
+Confusion matrix:
+[[ 5 24  4]
+ [ 2 25  8]
+ [ 2 23  6]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.2547, 0.4955, 0.2498]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.1784, 0.5598, 0.2618]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.203194    #na#        00:01     
+█1         1.181227    #na#        00:01     
+█2         1.197414    #na#        00:01     
+█3         1.203949    #na#        00:01     
+█4         1.206335    #na#        00:01     
+█5         1.195048    #na#        00:01     
+█6         1.167117    #na#        00:01     
+█7         1.150704    #na#        00:01     
+█8         1.134930    #na#        00:01     
+█9         1.144467    #na#        00:01     
+█10        1.206081    #na#        00:01     
+█11        6.265078    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 94 learning rates
+Selected learning rate 1e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.245232    1.109231    0.313131  00:01     
+██1         1.240782    1.113714    0.313131  00:01     
+██2         1.247811    1.116791    0.323232  00:01     
+██3         1.254699    1.121678    0.303030  00:01     
+██4         1.258930    1.127900    0.333333  00:01     
+██5         1.246864    1.130980    0.383838  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 6 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(0, 4, 21), (2, 4, 20), (0, 2, 8), (2, 0, 5), (4, 2, 5), (4, 0, 2)]
+Confusion matrix:
+[[ 4  8 21]
+ [ 5 10 20]
+ [ 2  5 24]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.4005, 0.4119, 0.1876]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.3919, 0.2334, 0.3747]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.200900    #na#        00:01     
+█1         1.175866    #na#        00:01     
+█2         1.168159    #na#        00:01     
+█3         1.180190    #na#        00:01     
+█4         1.181903    #na#        00:01     
+█5         1.181894    #na#        00:01     
+█6         1.166261    #na#        00:01     
+█7         1.146240    #na#        00:01     
+█8         1.134205    #na#        00:01     
+█9         1.151151    #na#        00:01     
+█10        1.211599    #na#        00:01     
+█11        4.802361    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 1.4454397707459274e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.235312    1.099682    0.343434  00:01     
+██1         1.208069    1.096362    0.343434  00:01     
+██2         1.200575    1.096396    0.363636  00:01     
+██3         1.207808    1.097699    0.363636  00:01     
+██4         1.203151    1.100384    0.404040  00:01     
+██5         1.194951    1.104077    0.414141  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 6 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(2, 4, 15), (0, 4, 9), (2, 0, 9), (4, 0, 9), (0, 2, 8), (4, 2, 8)]
+Confusion matrix:
+[[16  8  9]
+ [ 9 11 15]
+ [ 9  8 14]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.2214, 0.3228, 0.4557]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.3345, 0.2806, 0.3849]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.175426    #na#        00:01     
+█1         1.190673    #na#        00:01     
+█2         1.188093    #na#        00:01     
+█3         1.197078    #na#        00:01     
+█4         1.188866    #na#        00:01     
+█5         1.178807    #na#        00:01     
+█6         1.165759    #na#        00:01     
+█7         1.150370    #na#        00:01     
+█8         1.137647    #na#        00:01     
+█9         1.143535    #na#        00:01     
+█10        1.237250    #na#        00:01     
+█11        5.168668    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.159221    1.095372    0.333333  00:01     
+██1         1.180417    1.090966    0.353535  00:01     
+██2         1.187391    1.087265    0.323232  00:01     
+██3         1.183280    1.086829    0.353535  00:01     
+██4         1.190022    1.088459    0.373737  00:01     
+██5         1.188474    1.094908    0.353535  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 6 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(4, 0, 13), (0, 2, 11), (2, 0, 11), (4, 2, 11), (0, 4, 10), (2, 4, 8)]
+Confusion matrix:
+[[12 11 10]
+ [11 16  8]
+ [13 11  7]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.3530, 0.3319, 0.3151]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.3920, 0.2884, 0.3196]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.121423    #na#        00:01     
+█1         1.146013    #na#        00:01     
+█2         1.145563    #na#        00:01     
+█3         1.157675    #na#        00:01     
+█4         1.160586    #na#        00:01     
+█5         1.159535    #na#        00:01     
+█6         1.139682    #na#        00:01     
+█7         1.132839    #na#        00:01     
+█8         1.128253    #na#        00:01     
+█9         1.143565    #na#        00:01     
+█10        1.211256    #na#        00:01     
+█11        4.914131    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.179392    1.099074    0.303030  00:01     
+██1         1.198554    1.103706    0.343434  00:01     
+██2         1.212932    1.109308    0.333333  00:01     
+██3         1.199020    1.112861    0.262626  00:01     
+██4         1.200171    1.117876    0.272727  00:01     
+██5         1.204757    1.125506    0.303030  00:01     
+Interpretation of the results given by model having encoder trained during 5 epochs, classifier during 6 epochs and with 3 unfrozen layers:
+█Most confused classes:
+[(0, 2, 20), (4, 2, 17), (2, 0, 14), (4, 0, 10), (0, 4, 4), (2, 4, 4)]
+Confusion matrix:
+[[ 9 20  4]
+ [14 17  4]
+ [10 17  4]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.4670, 0.2240, 0.3090]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.3558, 0.2731, 0.3711]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         4.507874    #na#        00:00     
+█1         4.516766    #na#        00:00     
+█2         4.525942    #na#        00:00     
+█3         4.521689    #na#        00:00     
+█4         4.518176    #na#        00:00     
+█5         4.513752    #na#        00:00     
+█6         4.513875    #na#        00:00     
+█7         4.517342    #na#        00:00     
+█8         4.518344    #na#        00:00     
+█9         4.519014    #na#        00:00     
+█10        4.521449    #na#        00:00     
+█11        4.521437    #na#        00:00     
+█12        4.521554    #na#        00:00     
+█13        4.516238    #na#        00:00     
+█14        4.510921    #na#        00:00     
+█15        4.503390    #na#        00:00     
+█16        4.494423    #na#        00:00     
+█17        4.478190    #na#        00:00     
+█18        4.450451    #na#        00:00     
+█19        4.411125    #na#        00:00     
+█20        4.355531    #na#        00:00     
+█21        4.280551    #na#        00:00     
+█22        4.192331    #na#        00:00     
+█23        4.093952    #na#        00:00     
+█24        3.987053    #na#        00:00     
+█25        3.874823    #na#        00:00     
+█26        3.758440    #na#        00:00     
+█27        3.641326    #na#        00:00     
+█28        3.533523    #na#        00:00     
+█29        3.473961    #na#        00:00     
+█30        3.622495    #na#        00:00     
+█31        4.383571    #na#        00:00     
+█32        6.111361    #na#        00:00     
+█33        6.970829    #na#        00:00     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 100 learning rates
+Selected learning rate 0.36307805477010097 for training language model
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         4.137086    4.036283    0.223214  00:00     
+██1         3.939004    4.798164    0.188839  00:00     
+██2         3.929213    4.342981    0.271429  00:00     
+██3         3.703672    3.768699    0.333929  00:00     
+██4         3.419255    3.604480    0.332366  00:00     
+██5         3.186797    3.584019    0.332589  00:00     
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.157380    #na#        00:01     
+█1         1.177552    #na#        00:01     
+█2         1.171068    #na#        00:01     
+█3         1.170525    #na#        00:01     
+█4         1.172836    #na#        00:01     
+█5         1.182714    #na#        00:01     
+█6         1.173436    #na#        00:01     
+█7         1.156983    #na#        00:01     
+█8         1.138203    #na#        00:01     
+█9         1.143810    #na#        00:01     
+█10        1.205058    #na#        00:01     
+█11        5.416551    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1.4454397707459274e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.219807    1.106867    0.303030  00:01     
+██1         1.201931    1.111668    0.313131  00:01     
+██2         1.215235    1.115234    0.333333  00:01     
+██3         1.201255    1.115810    0.353535  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 4 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(0, 4, 26), (2, 4, 26), (2, 0, 4), (4, 0, 4), (0, 2, 3), (4, 2, 1)]
+Confusion matrix:
+[[ 4  3 26]
+ [ 4  5 26]
+ [ 4  1 26]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.2579, 0.3005, 0.4416]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.3226, 0.3510, 0.3265]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.170650    #na#        00:01     
+█1         1.176970    #na#        00:01     
+█2         1.174855    #na#        00:01     
+█3         1.184264    #na#        00:01     
+█4         1.185273    #na#        00:01     
+█5         1.180329    #na#        00:01     
+█6         1.165016    #na#        00:01     
+█7         1.160421    #na#        00:01     
+█8         1.150880    #na#        00:01     
+█9         1.164643    #na#        00:01     
+█10        1.259014    #na#        00:01     
+█11        5.646818    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.192027    1.094449    0.363636  00:01     
+██1         1.196406    1.091344    0.353535  00:01     
+██2         1.199481    1.090194    0.353535  00:01     
+██3         1.193969    1.087810    0.343434  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 4 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(4, 2, 29), (0, 2, 26), (2, 0, 6), (4, 0, 2), (0, 4, 1), (2, 4, 1)]
+Confusion matrix:
+[[ 6 26  1]
+ [ 6 28  1]
+ [ 2 29  0]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.3574, 0.3684, 0.2741]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.2645, 0.3946, 0.3409]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.253398    #na#        00:01     
+█1         1.244074    #na#        00:01     
+█2         1.234970    #na#        00:01     
+█3         1.235302    #na#        00:01     
+█4         1.227572    #na#        00:01     
+█5         1.227853    #na#        00:01     
+█6         1.209663    #na#        00:01     
+█7         1.192058    #na#        00:01     
+█8         1.168412    #na#        00:01     
+█9         1.175099    #na#        00:01     
+█10        1.244660    #na#        00:01     
+█11        5.147351    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1.7378008287493754e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.171743    1.114324    0.373737  00:01     
+██1         1.190941    1.132119    0.373737  00:01     
+██2         1.204055    1.151210    0.363636  00:01     
+██3         1.213136    1.155134    0.323232  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 4 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(0, 2, 26), (4, 2, 23), (2, 4, 11), (0, 4, 7)]
+Confusion matrix:
+[[ 0 26  7]
+ [ 0 24 11]
+ [ 0 23  8]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.2693, 0.4046, 0.3261]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.1812, 0.3933, 0.4255]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.235610    #na#        00:01     
+█1         1.207506    #na#        00:01     
+█2         1.199057    #na#        00:01     
+█3         1.211885    #na#        00:01     
+█4         1.203506    #na#        00:01     
+█5         1.195143    #na#        00:01     
+█6         1.171766    #na#        00:01     
+█7         1.159804    #na#        00:01     
+█8         1.149211    #na#        00:01     
+█9         1.153171    #na#        00:01     
+█10        1.230047    #na#        00:01     
+█11        4.640179    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.139802    1.094064    0.373737  00:01     
+██1         1.147737    1.089417    0.343434  00:01     
+██2         1.131819    1.082127    0.434343  00:01     
+██3         1.136724    1.076875    0.383838  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 4 epochs and with 3 unfrozen layers:
+█Most confused classes:
+[(2, 4, 17), (0, 4, 11), (0, 2, 9), (4, 0, 9), (4, 2, 9), (2, 0, 6)]
+Confusion matrix:
+[[13  9 11]
+ [ 6 12 17]
+ [ 9  9 13]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.3423, 0.3554, 0.3023]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.1930, 0.3981, 0.4088]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.175515    #na#        00:01     
+█1         1.194245    #na#        00:01     
+█2         1.199661    #na#        00:01     
+█3         1.197702    #na#        00:01     
+█4         1.195557    #na#        00:01     
+█5         1.196754    #na#        00:01     
+█6         1.190556    #na#        00:01     
+█7         1.178053    #na#        00:01     
+█8         1.161848    #na#        00:01     
+█9         1.168485    #na#        00:01     
+█10        1.242576    #na#        00:01     
+█11        4.899891    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 94 learning rates
+Selected learning rate 2.0892961308540395e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.204289    1.103058    0.353535  00:01     
+██1         1.201149    1.114037    0.323232  00:01     
+██2         1.220112    1.126140    0.313131  00:01     
+██3         1.212466    1.135398    0.323232  00:01     
+██4         1.220304    1.145870    0.353535  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 5 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(2, 4, 21), (0, 4, 20), (0, 2, 11), (4, 2, 7), (2, 0, 3), (4, 0, 2)]
+Confusion matrix:
+[[ 2 11 20]
+ [ 3 11 21]
+ [ 2  7 22]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.3547, 0.2647, 0.3806]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.2782, 0.2128, 0.5090]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.199995    #na#        00:01     
+█1         1.192209    #na#        00:01     
+█2         1.222538    #na#        00:01     
+█3         1.210579    #na#        00:01     
+█4         1.204424    #na#        00:01     
+█5         1.200251    #na#        00:01     
+█6         1.181161    #na#        00:01     
+█7         1.157409    #na#        00:01     
+█8         1.152711    #na#        00:01     
+█9         1.168116    #na#        00:01     
+█10        1.259236    #na#        00:01     
+█11        6.623962    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 4.36515832240166e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.226575    1.104002    0.353535  00:01     
+██1         1.208503    1.118666    0.353535  00:01     
+██2         1.218511    1.131834    0.323232  00:01     
+██3         1.214160    1.137800    0.323232  00:01     
+██4         1.209953    1.145679    0.343434  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 5 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(0, 2, 25), (4, 2, 20), (4, 0, 11), (2, 0, 9)]
+Confusion matrix:
+[[ 8 25  0]
+ [ 9 26  0]
+ [11 20  0]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.4229, 0.3694, 0.2077]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.2837, 0.4743, 0.2420]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.212317    #na#        00:01     
+█1         1.207076    #na#        00:01     
+█2         1.192335    #na#        00:01     
+█3         1.192183    #na#        00:01     
+█4         1.187619    #na#        00:01     
+█5         1.180565    #na#        00:01     
+█6         1.170869    #na#        00:01     
+█7         1.157195    #na#        00:01     
+█8         1.139068    #na#        00:01     
+█9         1.134237    #na#        00:01     
+█10        1.212163    #na#        00:01     
+█11        8.008985    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 94 learning rates
+Selected learning rate 1.4454397707459274e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.203929    1.098495    0.343434  00:01     
+██1         1.211826    1.102704    0.333333  00:01     
+██2         1.232483    1.107066    0.323232  00:01     
+██3         1.233333    1.111933    0.333333  00:01     
+██4         1.233219    1.115839    0.313131  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 5 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(2, 0, 26), (4, 0, 23), (0, 2, 9), (4, 2, 5), (2, 4, 3), (0, 4, 2)]
+Confusion matrix:
+[[22  9  2]
+ [26  6  3]
+ [23  5  3]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.3171, 0.3451, 0.3378]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.3294, 0.4180, 0.2526]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.197456    #na#        00:01     
+█1         1.170907    #na#        00:01     
+█2         1.204635    #na#        00:01     
+█3         1.218042    #na#        00:01     
+█4         1.210196    #na#        00:01     
+█5         1.206950    #na#        00:01     
+█6         1.198388    #na#        00:01     
+█7         1.175756    #na#        00:01     
+█8         1.155550    #na#        00:01     
+█9         1.161199    #na#        00:01     
+█10        1.213479    #na#        00:01     
+█11        5.018739    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 94 learning rates
+Selected learning rate 1.7378008287493754e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.213838    1.110064    0.282828  00:01     
+██1         1.206770    1.117678    0.363636  00:01     
+██2         1.202496    1.128158    0.333333  00:01     
+██3         1.209157    1.138129    0.323232  00:01     
+██4         1.221248    1.148319    0.292929  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 5 epochs and with 3 unfrozen layers:
+█Most confused classes:
+[(0, 2, 25), (2, 4, 20), (4, 2, 17), (0, 4, 7), (4, 0, 1)]
+Confusion matrix:
+[[ 1 25  7]
+ [ 0 15 20]
+ [ 1 17 13]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.2435, 0.3211, 0.4354]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.3294, 0.2718, 0.3988]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.213085    #na#        00:01     
+█1         1.204204    #na#        00:01     
+█2         1.217391    #na#        00:01     
+█3         1.218817    #na#        00:01     
+█4         1.202585    #na#        00:01     
+█5         1.198689    #na#        00:01     
+█6         1.185370    #na#        00:01     
+█7         1.168630    #na#        00:01     
+█8         1.150231    #na#        00:01     
+█9         1.152051    #na#        00:01     
+█10        1.245740    #na#        00:01     
+█11        5.615077    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 94 learning rates
+Selected learning rate 5.248074602497725e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.131536    1.099092    0.373737  00:01     
+██1         1.121083    1.103478    0.383838  00:01     
+██2         1.125515    1.108359    0.303030  00:01     
+██3         1.124155    1.111235    0.292929  00:01     
+██4         1.114627    1.117092    0.333333  00:01     
+██5         1.123957    1.121571    0.363636  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 6 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(4, 2, 20), (0, 2, 14), (0, 4, 14), (2, 4, 13), (4, 0, 2)]
+Confusion matrix:
+[[ 5 14 14]
+ [ 0 22 13]
+ [ 2 20  9]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.2658, 0.2574, 0.4767]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.3687, 0.2222, 0.4091]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.298492    #na#        00:01     
+█1         1.267330    #na#        00:01     
+█2         1.286584    #na#        00:01     
+█3         1.265562    #na#        00:01     
+█4         1.246868    #na#        00:01     
+█5         1.225598    #na#        00:01     
+█6         1.202772    #na#        00:01     
+█7         1.186768    #na#        00:01     
+█8         1.170775    #na#        00:01     
+█9         1.175307    #na#        00:01     
+█10        1.262495    #na#        00:01     
+█11        3.449060    #na#        00:01     
+█12        4.951279    #na#        00:00     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 97 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.244168    1.102025    0.343434  00:01     
+██1         1.258325    1.109231    0.363636  00:01     
+██2         1.260777    1.117707    0.363636  00:01     
+██3         1.259530    1.125981    0.363636  00:01     
+██4         1.262353    1.134137    0.363636  00:01     
+██5         1.273397    1.147183    0.393939  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 6 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(0, 4, 19), (2, 4, 13), (4, 2, 13), (0, 2, 10), (2, 0, 4), (4, 0, 1)]
+Confusion matrix:
+[[ 4 10 19]
+ [ 4 18 13]
+ [ 1 13 17]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.1871, 0.2870, 0.5259]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.3622, 0.2789, 0.3589]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.207345    #na#        00:01     
+█1         1.239287    #na#        00:01     
+█2         1.233562    #na#        00:01     
+█3         1.231872    #na#        00:01     
+█4         1.228954    #na#        00:01     
+█5         1.219140    #na#        00:01     
+█6         1.203297    #na#        00:01     
+█7         1.183194    #na#        00:01     
+█8         1.162093    #na#        00:01     
+█9         1.167416    #na#        00:01     
+█10        1.246918    #na#        00:01     
+█11        4.317949    #na#        00:01     
+█12        9.053264    #na#        00:00     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 97 learning rates
+Selected learning rate 1.3182567385564074e-06 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.227179    1.105733    0.303030  00:01     
+██1         1.214319    1.127337    0.232323  00:01     
+██2         1.219325    1.150719    0.232323  00:01     
+██3         1.220309    1.173479    0.232323  00:01     
+██4         1.217347    1.190093    0.272727  00:01     
+██5         1.225453    1.202676    0.252525  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 6 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(0, 2, 26), (2, 0, 18), (4, 2, 16), (4, 0, 14)]
+Confusion matrix:
+[[ 7 26  0]
+ [18 17  0]
+ [14 16  1]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.4146, 0.2155, 0.3699]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.4603, 0.2593, 0.2804]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.241868    #na#        00:01     
+█1         1.255977    #na#        00:01     
+█2         1.244207    #na#        00:01     
+█3         1.232318    #na#        00:01     
+█4         1.231964    #na#        00:01     
+█5         1.225522    #na#        00:01     
+█6         1.204306    #na#        00:01     
+█7         1.188098    #na#        00:01     
+█8         1.170194    #na#        00:01     
+█9         1.178106    #na#        00:01     
+█10        1.235882    #na#        00:01     
+█11        4.873520    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.252849    1.115793    0.353535  00:01     
+██1         1.278089    1.144264    0.363636  00:01     
+██2         1.285008    1.163386    0.343434  00:01     
+██3         1.267362    1.170409    0.343434  00:01     
+██4         1.276696    1.162152    0.353535  00:01     
+██5         1.277205    1.159459    0.333333  00:01     
+Interpretation of the results given by model having encoder trained during 6 epochs, classifier during 6 epochs and with 3 unfrozen layers:
+█Most confused classes:
+[(4, 2, 24), (0, 2, 23), (0, 4, 10), (2, 4, 7), (2, 0, 1), (4, 0, 1)]
+Confusion matrix:
+[[ 0 23 10]
+ [ 1 27  7]
+ [ 1 24  6]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.1148, 0.2706, 0.6145]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.2742, 0.3870, 0.3387]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         4.512496    #na#        00:00     
+█1         4.517384    #na#        00:00     
+█2         4.523398    #na#        00:00     
+█3         4.511626    #na#        00:00     
+█4         4.507012    #na#        00:00     
+█5         4.514904    #na#        00:00     
+█6         4.516165    #na#        00:00     
+█7         4.518488    #na#        00:00     
+█8         4.517493    #na#        00:00     
+█9         4.515551    #na#        00:00     
+█10        4.516561    #na#        00:00     
+█11        4.516758    #na#        00:00     
+█12        4.518183    #na#        00:00     
+█13        4.512930    #na#        00:00     
+█14        4.508186    #na#        00:00     
+█15        4.500249    #na#        00:00     
+█16        4.487441    #na#        00:00     
+█17        4.473644    #na#        00:00     
+█18        4.446189    #na#        00:00     
+█19        4.406577    #na#        00:00     
+█20        4.352167    #na#        00:00     
+█21        4.278346    #na#        00:00     
+█22        4.191103    #na#        00:00     
+█23        4.101190    #na#        00:00     
+█24        3.993999    #na#        00:00     
+█25        3.882737    #na#        00:00     
+█26        3.766916    #na#        00:00     
+█27        3.654238    #na#        00:00     
+█28        3.546005    #na#        00:00     
+█29        3.474860    #na#        00:00     
+█30        3.594857    #na#        00:00     
+█31        4.385262    #na#        00:00     
+█32        6.054668    #na#        00:00     
+█33        6.904591    #na#        00:00     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 100 learning rates
+Selected learning rate 0.36307805477010097 for training language model
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         4.128773    3.617766    0.264509  00:00     
+██1         3.817319    4.807709    0.218527  00:00     
+██2         3.955032    4.810163    0.239732  00:00     
+██3         3.857869    3.853541    0.318973  00:00     
+██4         3.592295    3.730623    0.329018  00:00     
+██5         3.342903    3.657065    0.323438  00:00     
+██6         3.137711    3.632205    0.326562  00:00     
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.266498    #na#        00:01     
+█1         1.276929    #na#        00:01     
+█2         1.268482    #na#        00:01     
+█3         1.266276    #na#        00:01     
+█4         1.263506    #na#        00:01     
+█5         1.248910    #na#        00:01     
+█6         1.228961    #na#        00:01     
+█7         1.201759    #na#        00:01     
+█8         1.176873    #na#        00:01     
+█9         1.177685    #na#        00:01     
+█10        1.263056    #na#        00:01     
+█11        5.516532    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.240375    1.099628    0.353535  00:01     
+██1         1.270552    1.101226    0.353535  00:01     
+██2         1.259831    1.102693    0.393939  00:01     
+██3         1.256586    1.102136    0.434343  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 4 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(4, 2, 26), (0, 2, 20), (2, 0, 5), (4, 0, 5)]
+Confusion matrix:
+[[13 20  0]
+ [ 5 30  0]
+ [ 5 26  0]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.3492, 0.4444, 0.2065]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.3471, 0.4510, 0.2020]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.146265    #na#        00:01     
+█1         1.185244    #na#        00:01     
+█2         1.176656    #na#        00:01     
+█3         1.187096    #na#        00:01     
+█4         1.179069    #na#        00:01     
+█5         1.178988    #na#        00:01     
+█6         1.163711    #na#        00:01     
+█7         1.147610    #na#        00:01     
+█8         1.137212    #na#        00:01     
+█9         1.143817    #na#        00:01     
+█10        1.239989    #na#        00:01     
+█11        6.203918    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 1e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.213156    1.100612    0.323232  00:01     
+██1         1.225718    1.103708    0.272727  00:01     
+██2         1.207171    1.109429    0.303030  00:01     
+██3         1.201818    1.117006    0.333333  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 4 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(2, 0, 22), (4, 0, 20), (0, 2, 13), (4, 2, 7), (0, 4, 2), (2, 4, 2)]
+Confusion matrix:
+[[18 13  2]
+ [22 11  2]
+ [20  7  4]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.3805, 0.3551, 0.2645]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.3173, 0.3079, 0.3748]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.187240    #na#        00:01     
+█1         1.193779    #na#        00:01     
+█2         1.191721    #na#        00:01     
+█3         1.190065    #na#        00:01     
+█4         1.198099    #na#        00:01     
+█5         1.191171    #na#        00:01     
+█6         1.173225    #na#        00:01     
+█7         1.171279    #na#        00:01     
+█8         1.154033    #na#        00:01     
+█9         1.164115    #na#        00:01     
+█10        1.230542    #na#        00:01     
+█11        5.157631    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 94 learning rates
+Selected learning rate 2.0892961308540395e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.200697    1.094177    0.404040  00:01     
+██1         1.195142    1.089243    0.373737  00:01     
+██2         1.195380    1.088077    0.353535  00:01     
+██3         1.195674    1.087746    0.373737  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 4 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(0, 2, 22), (4, 2, 18), (4, 0, 10), (2, 0, 8), (0, 4, 2), (2, 4, 2)]
+Confusion matrix:
+[[ 9 22  2]
+ [ 8 25  2]
+ [10 18  3]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.3004, 0.3491, 0.3505]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.3527, 0.3775, 0.2698]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.252701    #na#        00:01     
+█1         1.267762    #na#        00:01     
+█2         1.263468    #na#        00:01     
+█3         1.264528    #na#        00:01     
+█4         1.260459    #na#        00:01     
+█5         1.240464    #na#        00:01     
+█6         1.216435    #na#        00:01     
+█7         1.198780    #na#        00:01     
+█8         1.177053    #na#        00:01     
+█9         1.179129    #na#        00:01     
+█10        1.250868    #na#        00:01     
+█11        6.570113    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.274155    1.101735    0.313131  00:01     
+██1         1.242616    1.115284    0.303030  00:01     
+██2         1.251591    1.134161    0.292929  00:01     
+██3         1.258593    1.154639    0.323232  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 4 epochs and with 3 unfrozen layers:
+█Most confused classes:
+[(2, 0, 30), (4, 0, 23), (4, 2, 8), (0, 2, 5), (0, 4, 1)]
+Confusion matrix:
+[[27  5  1]
+ [30  5  0]
+ [23  8  0]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.3610, 0.4255, 0.2135]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.4273, 0.2493, 0.3233]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.193082    #na#        00:01     
+█1         1.183761    #na#        00:01     
+█2         1.189362    #na#        00:01     
+█3         1.192707    #na#        00:01     
+█4         1.184396    #na#        00:01     
+█5         1.179358    #na#        00:01     
+█6         1.168985    #na#        00:01     
+█7         1.158632    #na#        00:01     
+█8         1.147048    #na#        00:01     
+█9         1.161192    #na#        00:01     
+█10        1.222960    #na#        00:01     
+█11        5.758522    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.254772    1.099281    0.373737  00:01     
+██1         1.239995    1.106626    0.323232  00:01     
+██2         1.236089    1.116896    0.323232  00:01     
+██3         1.245329    1.130887    0.313131  00:01     
+██4         1.245866    1.142054    0.323232  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 5 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(2, 0, 24), (4, 0, 19), (0, 4, 10), (2, 4, 8), (0, 2, 4), (4, 2, 2)]
+Confusion matrix:
+[[19  4 10]
+ [24  3  8]
+ [19  2 10]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.2929, 0.3784, 0.3286]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 4, tensor(2), tensor([0.3736, 0.2521, 0.3744]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.191586    #na#        00:01     
+█1         1.189534    #na#        00:01     
+█2         1.214535    #na#        00:01     
+█3         1.206306    #na#        00:01     
+█4         1.205672    #na#        00:01     
+█5         1.205119    #na#        00:01     
+█6         1.183667    #na#        00:01     
+█7         1.176637    #na#        00:01     
+█8         1.159595    #na#        00:01     
+█9         1.162087    #na#        00:01     
+█10        1.216591    #na#        00:01     
+█11        7.342851    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1.4454397707459274e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.231508    1.112981    0.333333  00:01     
+██1         1.222200    1.133909    0.333333  00:01     
+██2         1.205662    1.149155    0.333333  00:01     
+██3         1.196616    1.158963    0.333333  00:01     
+██4         1.196329    1.164582    0.303030  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 5 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(4, 0, 31), (2, 0, 30), (0, 2, 4), (2, 4, 4)]
+Confusion matrix:
+[[29  4  0]
+ [30  1  4]
+ [31  0  0]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.4643, 0.2725, 0.2632]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.4664, 0.2140, 0.3196]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.265878    #na#        00:01     
+█1         1.234298    #na#        00:01     
+█2         1.237786    #na#        00:01     
+█3         1.237759    #na#        00:01     
+█4         1.223755    #na#        00:01     
+█5         1.216706    #na#        00:01     
+█6         1.193675    #na#        00:01     
+█7         1.167439    #na#        00:01     
+█8         1.150420    #na#        00:01     
+█9         1.158300    #na#        00:01     
+█10        1.245084    #na#        00:01     
+█11        4.666739    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 94 learning rates
+Selected learning rate 1e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.208807    1.093266    0.373737  00:01     
+██1         1.184965    1.093704    0.333333  00:01     
+██2         1.194341    1.094566    0.343434  00:01     
+██3         1.205079    1.095603    0.303030  00:01     
+██4         1.205940    1.099106    0.323232  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 5 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(4, 0, 23), (2, 0, 18), (0, 2, 10), (2, 4, 8), (0, 4, 4), (4, 2, 4)]
+Confusion matrix:
+[[19 10  4]
+ [18  9  8]
+ [23  4  4]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.4215, 0.2491, 0.3295]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 0, tensor(0), tensor([0.3564, 0.3104, 0.3333]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.189855    #na#        00:01     
+█1         1.203226    #na#        00:01     
+█2         1.187670    #na#        00:01     
+█3         1.164107    #na#        00:01     
+█4         1.158770    #na#        00:01     
+█5         1.145509    #na#        00:01     
+█6         1.132257    #na#        00:01     
+█7         1.129197    #na#        00:01     
+█8         1.120493    #na#        00:01     
+█9         1.132087    #na#        00:01     
+█10        1.240423    #na#        00:01     
+█11        5.301206    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 2.0892961308540395e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.198917    1.103303    0.323232  00:01     
+██1         1.184906    1.104170    0.363636  00:01     
+██2         1.186523    1.103397    0.353535  00:01     
+██3         1.178831    1.104373    0.353535  00:01     
+██4         1.181130    1.100770    0.363636  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 5 epochs and with 3 unfrozen layers:
+█Most confused classes:
+[(2, 0, 23), (4, 0, 22), (0, 2, 6), (2, 4, 6), (0, 4, 4), (4, 2, 2)]
+Confusion matrix:
+[[23  6  4]
+ [23  6  6]
+ [22  2  7]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 0, tensor(0), tensor([0.5978, 0.2170, 0.1852]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.3306, 0.3996, 0.2698]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.230962    #na#        00:01     
+█1         1.232244    #na#        00:01     
+█2         1.233300    #na#        00:01     
+█3         1.238903    #na#        00:01     
+█4         1.240706    #na#        00:01     
+█5         1.237269    #na#        00:01     
+█6         1.219439    #na#        00:01     
+█7         1.198869    #na#        00:01     
+█8         1.182805    #na#        00:01     
+█9         1.185054    #na#        00:01     
+█10        1.292308    #na#        00:01     
+█11        5.545203    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1.4454397707459274e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.289644    1.104457    0.313131  00:01     
+██1         1.306732    1.112626    0.313131  00:01     
+██2         1.308471    1.119506    0.323232  00:01     
+██3         1.301285    1.123923    0.333333  00:01     
+██4         1.294385    1.120444    0.363636  00:01     
+██5         1.304725    1.118350    0.373737  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 6 epochs and with 0 unfrozen layers:
+█Most confused classes:
+[(0, 4, 27), (2, 4, 25), (0, 2, 4), (2, 0, 3), (4, 2, 2), (4, 0, 1)]
+Confusion matrix:
+[[ 2  4 27]
+ [ 3  7 25]
+ [ 1  2 28]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.2205, 0.3363, 0.4432]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.2798, 0.3629, 0.3573]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.233344    #na#        00:01     
+█1         1.217925    #na#        00:01     
+█2         1.191586    #na#        00:01     
+█3         1.191078    #na#        00:01     
+█4         1.197328    #na#        00:01     
+█5         1.175457    #na#        00:01     
+█6         1.166991    #na#        00:01     
+█7         1.151293    #na#        00:01     
+█8         1.140809    #na#        00:01     
+█9         1.144215    #na#        00:01     
+█10        1.217220    #na#        00:01     
+█11        6.443593    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 96 learning rates
+Selected learning rate 1.202264434617413e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.200014    1.098512    0.363636  00:01     
+██1         1.199801    1.100371    0.333333  00:01     
+██2         1.182319    1.104298    0.303030  00:01     
+██3         1.187224    1.110478    0.292929  00:01     
+██4         1.186317    1.116893    0.353535  00:01     
+██5         1.182794    1.124461    0.363636  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 6 epochs and with 1 unfrozen layers:
+█Most confused classes:
+[(0, 2, 15), (0, 4, 14), (4, 2, 10), (2, 0, 9), (2, 4, 8), (4, 0, 7)]
+Confusion matrix:
+[[ 4 15 14]
+ [ 9 18  8]
+ [ 7 10 14]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 4, tensor(2), tensor([0.3306, 0.2508, 0.4186]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.3512, 0.4019, 0.2469]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.243687    #na#        00:01     
+█1         1.219555    #na#        00:01     
+█2         1.210950    #na#        00:01     
+█3         1.212152    #na#        00:01     
+█4         1.206419    #na#        00:01     
+█5         1.195886    #na#        00:01     
+█6         1.175185    #na#        00:01     
+█7         1.166730    #na#        00:01     
+█8         1.151838    #na#        00:01     
+█9         1.159312    #na#        00:01     
+█10        1.217076    #na#        00:01     
+█11        6.514165    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 1e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.204030    1.105027    0.323232  00:01     
+██1         1.212184    1.114103    0.363636  00:01     
+██2         1.211378    1.126968    0.333333  00:01     
+██3         1.208616    1.134545    0.333333  00:01     
+██4         1.204608    1.140934    0.373737  00:01     
+██5         1.205259    1.147700    0.353535  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 6 epochs and with 2 unfrozen layers:
+█Most confused classes:
+[(0, 2, 24), (4, 2, 20), (0, 4, 8), (2, 0, 6), (2, 4, 6)]
+Confusion matrix:
+[[ 1 24  8]
+ [ 6 23  6]
+ [ 0 20 11]]
+Prediction on sentence "This movie is really nice!!!!! haven't seen anything like this before :3":
+(Category 2, tensor(1), tensor([0.2592, 0.5838, 0.1569]))
+Prediction on sentence "OMG WHAT WAS THAT???":
+(Category 2, tensor(1), tensor([0.2800, 0.5151, 0.2049]))
+███epoch     train_loss  valid_loss  accuracy  time    
+█0         1.198615    #na#        00:01     
+█1         1.213166    #na#        00:01     
+█2         1.209279    #na#        00:01     
+█3         1.217345    #na#        00:01     
+█4         1.204714    #na#        00:01     
+█5         1.195153    #na#        00:01     
+█6         1.179276    #na#        00:01     
+█7         1.170569    #na#        00:01     
+█8         1.151669    #na#        00:01     
+█9         1.158937    #na#        00:01     
+█10        1.233835    #na#        00:01     
+█11        5.937735    #na#        00:01     
+LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
+Tested 95 learning rates
+Selected learning rate 2.51188643150958e-07 for training classifier
+█epoch     train_loss  valid_loss  accuracy  time    
+██0         1.220183    1.094868    0.333333  00:01     
+██1         1.213382    1.101286    0.333333  00:01     
+██2         1.209344    1.104481    0.353535  00:01     
+██3         1.209719    1.102994    0.373737  00:01     
+██4         1.200287    1.100459    0.464646  00:01     
+██5         1.207804    1.102434    0.434343  00:01     
+Interpretation of the results given by model having encoder trained during 7 epochs, classifier during 6 epochs and with 3 unfrozen layers:
+█Finished in 1325 seconds

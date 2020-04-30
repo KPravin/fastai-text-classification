@@ -28,15 +28,15 @@ class ModelWrapper {
     func find_learning_rate_with_steepest_loss() -> Double? {
         if let learner = learner {
             learner.lr_find()
-            print("Tested \(Python.len(learner.recorder.lrs)) learning rates")
+            Python.print("Tested \(Python.len(learner.recorder.lrs)) learning rates")
             let losses = learner.recorder.losses
             return Double(learner.recorder.lrs[np.argmax(np.subtract(losses[0..<losses.endIndex - 1], losses[1...]))])
             // for lr in learner.recorder.lrs {
-            //     print(lr)
+            //     Python.print(lr)
             // }
             //learner.recorder.plot()
         } else {
-            print("Learner is not yet initialized")
+            Python.print("Learner is not yet initialized")
         }
         return nil
     }
@@ -49,7 +49,7 @@ class ModelWrapper {
                 learner.freeze_to(n_layers)
             }
         } else {
-            print("Learner is not yet initialized")
+            Python.print("Learner is not yet initialized")
         }
     }
 
@@ -76,7 +76,7 @@ class ModelWrapper {
                 learner.save(path)
             }
         } else {
-            print("Learner is not yet initialized")
+            Python.print("Learner is not yet initialized")
         }
     }
 
@@ -88,20 +88,20 @@ class ModelWrapper {
                 learner.load(path)
             }
         } else {
-            print("Learner is not yet initialized")
+            Python.print("Learner is not yet initialized")
         }
     }
 
     func interpret() {
         let interpretation = ft.ClassificationInterpretation.from_learner(learner)
-        print("Most confused classes:")
-        print(interpretation.most_confused())
-        print("Confusion matrix:")
-        print(interpretation.confusion_matrix())
+        Python.print("Most confused classes:")
+        Python.print(interpretation.most_confused())
+        Python.print("Confusion matrix:")
+        Python.print(interpretation.confusion_matrix())
         for sentence in ["This movie is really nice!!!!! haven't seen anything like this before :3", "OMG WHAT WAS THAT???"]{
-            print(#"Prediction on sentence "\#(sentence)":"#)
-            print(learner!.predict(sentence))
+            Python.print(#"Prediction on sentence "\#(sentence)":"#)
+            Python.print(learner!.predict(sentence))
         }
-        print(Python.dir(interpretation))
+        //Python.print(Python.dir(interpretation))
     }
 }
