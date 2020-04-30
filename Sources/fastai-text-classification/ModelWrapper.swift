@@ -6,6 +6,7 @@
 #endif
 
 let ft = Python.import("fastai.text")
+let np = Python.import("numpy")
 
 class ModelWrapper {
     let csv_path: String
@@ -24,13 +25,20 @@ class ModelWrapper {
         self.drop_mult = drop_mult
     }
 
-    func trace_learning_rates() {
+    func find_learning_rate_with_steepest_loss() -> Double? {
         if let learner = learner {
             learner.lr_find()
-            learner.recorder.plot()
+            print("Tested \(Python.len(learner.recorder.lrs)) learning rates")
+            let losses = learner.recorder.losses
+            return Double(learner.recorder.lrs[np.argmax(np.subtract(losses[0..<losses.endIndex - 1], losses[1...]))])
+            // for lr in learner.recorder.lrs {
+            //     print(lr)
+            // }
+            //learner.recorder.plot()
         } else {
             print("Learner is not yet initialized")
         }
+        return nil
     }
 
     func freeze(n_layers: Int) {
@@ -82,5 +90,18 @@ class ModelWrapper {
         } else {
             print("Learner is not yet initialized")
         }
+    }
+
+    func interpret() {
+        let interpretation = ft.ClassificationInterpretation.from_learner(learner)
+        print("Most confused classes:")
+        print(interpretation.most_confused())
+        print("Confusion matrix:")
+        print(interpretation.confusion_matrix())
+        for sentence in ["This movie is really nice!!!!! haven't seen anything like this before :3", "OMG WHAT WAS THAT???"]{
+            print(#"Prediction on sentence "\#(sentence)":"#)
+            print(learner!.predict(sentence))
+        }
+        print(Python.dir(interpretation))
     }
 }
