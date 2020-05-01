@@ -29,7 +29,15 @@ class ModelWrapper {
         if let learner = learner {
             learner.lr_find()
             Python.print("Tested \(Python.len(learner.recorder.lrs)) learning rates")
-            let losses = learner.recorder.losses
+            let losses = Python.list(Python.map(Python.float, learner.recorder.losses))
+            draw_plot(
+              ys: losses,
+              xs: learner.recorder.lrs,
+              x_label: "Learning rates",
+              y_label: "Losses",
+              title: "Tested learning rates with respective losses",
+              xscale: "log"
+            )
             return Double(learner.recorder.lrs[np.argmax(np.subtract(losses[0..<losses.endIndex - 1], losses[1...]))])
             // for lr in learner.recorder.lrs {
             //     Python.print(lr)
@@ -92,16 +100,19 @@ class ModelWrapper {
         }
     }
 
-    func interpret() {
+    func interpret(visualize: Bool = false) {
         let interpretation = ft.ClassificationInterpretation.from_learner(learner)
-        Python.print("Most confused classes:")
-        Python.print(interpretation.most_confused())
-        Python.print("Confusion matrix:")
-        Python.print(interpretation.confusion_matrix())
+        if visualize {
+          interpretation.plot_confusion_matrix()
+        } else {
+          Python.print("Confusion matrix:")
+          Python.print(interpretation.confusion_matrix())
+          Python.print("Most confused classes:")
+          Python.print(interpretation.most_confused())
+        }
         for sentence in ["This movie is really nice!!!!! haven't seen anything like this before :3", "OMG WHAT WAS THAT???"]{
             Python.print(#"Prediction on sentence "\#(sentence)":"#)
             Python.print(learner!.predict(sentence))
         }
-        //Python.print(Python.dir(interpretation))
     }
 }

@@ -22,7 +22,7 @@ class DataWrangler {
         return df[columns_to_retain]
     }
 
-    func describe(top_n: Int = 10) {
+    func describe(top_n: Int = 10, visualize: Bool = false) {
         Python.print(#"Data is read from file "\#(csv_path)""#)
         Python.print("Number of records: \(df.shape[0])")
         Python.print("The first \(top_n) records from the collection:")
@@ -35,7 +35,11 @@ class DataWrangler {
         Python.print("Some statistics about marks:")
         Python.print(concise_df.mark.describe())
         Python.print("Distribution of tweet lengths:")
-        Python.print(concise_df.text.apply(Python.len).describe())
+        let lengths = concise_df.text.apply(Python.len).sort_values().reset_index(drop: true)
+        Python.print(lengths.describe())
+        if visualize{
+            draw_plot(ys: lengths, xs: nil, x_label: "Tweet id", y_label: "Tweet length", title: "Tweet lengths")
+        }
     }
 
     func save_csv(path: String) {
